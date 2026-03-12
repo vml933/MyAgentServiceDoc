@@ -45,8 +45,7 @@ Agent 使用三種 MCP tool：
 每輪對話最多執行 **8 次 MCP tool call**，agent 會自行串接 tool chain 完成任務。例如：
 
 > 使用者：「我最近花了多少錢？」
-> → agent 先查詢最近 10 筆收據
-> → agent 再查詢收據總筆數
+> → agent 查詢收據總筆數
 > → 根據結果組合回覆：列出收據 + 加註「共 N 筆」
 
 ![多步驟推理示範](section2.PNG)
