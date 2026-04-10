@@ -9,8 +9,7 @@ flowchart TD
     Landing --> SiteSelect
     SiteSelect --> SiteHome["場站主頁<br/>• 平面圖<br/>• 用戶車位 Marker<br/>• 用戶位置 Marker & 規畫路徑"]
     SiteHome -.->|無車牌時自動顯示| ManagePlate["管理車牌<br/>(half-sheet)"]
-    SiteHome -->|設定| ManagePlate
-    ManagePlate -->|儲存| SiteHome
+    SiteHome -->|設定| ManagePlate    
     SiteHome -->|定位我的位置| Camera["掃描頁<br/>• 掃描 Tag"]
     Camera -->|偵測到 Tag| SiteHome    
 ```
